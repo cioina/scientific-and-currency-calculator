@@ -1,0 +1,31 @@
+Constants
+{
+STEP = _step //Internal constant;
+FROM = _from //Internal constant;
+TO = _to //Internal constant;
+COLWIDTH = _colwidth //Internal constant;
+Speed_of_light_in_vacuum = 299792458 //(m/s);
+Universal_gas_constant = 8.31451 //(J/mol*K);
+}
+
+Function variable
+{
+x
+}
+
+User definitions
+{
+CirclesToDegrees(x)~conv(1,1,2,x),
+DegreesToCircles(x)~conv(1,2,1,x),
+LengthCategoryId=6,
+MetersToInches(x)~conv(LengthCategoryId,14,9,x),
+InchesToMeters(x)~conv(6,9,14,x)
+}
+
+Mathematical expression
+{
+CirclesToDegrees(2),
+DegreesToCircles(720),
+MetersToInches(1),
+InchesToMeters(1)
+}

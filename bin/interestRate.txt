@@ -1,0 +1,31 @@
+Constants
+{
+FROM = _from //Internal constant;
+TO = _to //Internal constant;
+STEP = _step //Internal constant;
+COLWIDTH = _colwidth //Internal constant;
+DETTOLERANCE = _dettolerance //Internal constant;
+INTEGRTOLERANCE = _integrtolerance //Internal constant;
+}
+
+Function variable
+{
+x
+}
+
+User definitions
+{
+
+}
+
+Mathematical expressions
+{
+Rate=6,
+Period=10, 
+NPeriods=10, 
+Present_Value=100000, 
+Future_Value=610000, 
+Payment_Time=0,
+
+InterestPayment(Rate, Period, NPeriods, Present_Value, Future_Value, Payment_Time)
+}

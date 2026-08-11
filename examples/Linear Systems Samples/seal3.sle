@@ -1,0 +1,11 @@
+List of variables
+{
+x,y,z
+}
+
+System of linear equatins
+{
+  10 x  +    2 y  -  10 z  -  16 , 
+-10 x   +  5 y  + 12 z    -  7,    
+   4 x   +  6 y  +  10 z   -  36    
+}

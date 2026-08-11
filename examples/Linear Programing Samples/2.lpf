@@ -1,0 +1,23 @@
+List of variables
+{
+x,y
+}
+
+System of linear equatins
+{
+2 x +y -8,
+x +2 y -10
+
+}
+
+Conditions
+{
+<=0
+<=0
+
+}
+
+Objective Function
+{
+30 x + 50 y
+}

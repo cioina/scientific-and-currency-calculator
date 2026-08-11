@@ -1,0 +1,110 @@
+[Angles]
+1=pi radians : degrees : x*180 : x/180 : 674 : 287 : 452 : 304
+2=pi radians : gradients : x*200 : x/200 : 674 : 287 : 677 : 467
+3=degrees : minutes : x*60 : x/60 : 452 : 304 : 453 : 468
+4=minutes : seconds : x*60 : x/60 : 453 : 468 : 235 : 462
+5=circles : degrees : x*360 : x/360 : 444 : 118 : 452 : 304
+6=quadrants : degrees : x*90 : x/90 : 254 : 284 : 452 : 304
+
+[Bits & Bytes]
+1=megabytes : bytes : x*2^20 : x/(2^20) : 233 : 468 : 398 : 373
+2=kilobytes : bytes : x*2^10 : x/(2^10) : 573 : 470 : 398 : 373
+3=bytes : bits (micro) : x*8 : x/8 : 398 : 373 : 402 : 207
+
+[Capacity]
+1=gallons : quarts : x*4 : x/4 : 275 : 235 : 588 : 294
+2=quarts : pints : x*2 : x/2 : 588 : 294 : 688 : 421
+3=pints : gills : x*4 : x/4 : 688 : 421 : 524 : 574
+4=gills : fluid ounces : x*4 : x/4 : 524 : 574 : 254 : 502
+5=gallons : liters : x*3.785 : x/3.785 : 275 : 235 : 423 : 94
+6=liters : deciliters : x*10 : x/10 : 423 : 94 : 668 : 154
+7=deciliters : centiliters : x*10 : x/10 : 668 : 154 : 733 : 270
+8=centiliters : milliliters : x*10 : x/10 : 733 : 270 : 788 : 397
+9=cups : fluid ounces : x*8 : x/8 : 234 : 298 : 254 : 502
+10=fluid ounces : tablespoons : x*2 : x/2 : 254 : 502 : 413 : 353
+11=tablespoons : teaspoons : x*3 : x/3 : 413 : 353 : 584 : 393
+
+[Current]
+1=A : C/s : x : x : 361 : 257 : 527 : 361
+2=A : mA : x*1000 : x/1000 : 361 : 257 : 223 : 371
+3=A : uA : x*1000000 : x/1000000 : 361 : 257 : 330 : 91
+
+[Energy]
+1=J : ft lb : x*0.738 : x/0.738 : 433 : 227 : 275 : 125
+2=J : ergs : x*10^7 : x/10^7 : 433 : 227 : 357 : 417
+3=cal : J : x*4.186 : x/4.186 : 638 : 330 : 433 : 227
+4=Btu : cal : x*252 : x/252 : 644 : 502 : 638 : 330
+5=eV : J : x*1.6e-19 : x/1.6e-19 : 458 : 67 : 433 : 227
+6=MeV : eV : x*10^6 : x/10^6 : 685 : 66 : 458 : 67
+7=kWh : J : x*3.6e6 : x/3.6e6 : 632 : 169 : 433 : 227
+8=kJ : J : x*1000 : x/1000 : 242 : 299 : 433 : 227
+9=L atm : J : x*101.3 : x/101.3 : 522 : 428 : 433 : 227
+
+[Length]
+1=megameters : kilometers : x*1000 : x/1000 : 949 : 127 : 685 : 205
+2=kilometers : hectometers : x*10 : x/10 : 685 : 205 : 783 : 52
+3=hectometers : dekameters : x*10 : x/10 : 783 : 52 : 572 : 74
+4=dekameters : meters : x*10 : x/10 : 572 : 74 : 279 : 205
+5=meters : decimeters : x*10 : x/10 : 279 : 205 : 173 : 382
+6=decimeters : centimeters : x*10 : x/10 : 173 : 382 : 207 : 567
+7=centimeters : millimeters : x*10 : x/10 : 207 : 567 : 54 : 442
+8=millimeters : micrometers : x*1000 : x/1000 : 54 : 442 : 74 : 226
+9=micrometers : nanometers : x*1000 : x/1000 : 74 : 226 : 148 : 79
+10=nanometers : angstroms : x*10 : x/10 : 148 : 79 : 355 : 31
+11=inches : centimeters : x*2.54 : x/2.54 : 423 : 603 : 207 : 567
+12=leagues : miles : x*3 : x/3 : 530 : 252 : 820 : 243
+13=miles : furlongs : x*8 : x/8 : 820 : 243 : 940 : 346
+14=nautical miles : meters : x*1852 : x/1852 : 191 : 126 : 279 : 205
+15=furlongs : rods : x*40 : x/40 : 940 : 346 : 671 : 362
+16=rods : yards : x*5.5 : x/5.5 : 671 : 362 : 525 : 422
+17=fathoms : feet : x*6 : x/6 : 640 : 153 : 416 : 227
+18=yards : feet : x*3 : x/3 : 525 : 422 : 416 : 227
+19=feet : inches : x*12 : x/12 : 416 : 227 : 423 : 603
+20=inches : mils : x*1000 : x/1000 : 423 : 603 : 738 : 634
+21=picas : points : x*12 : x/12 : 784 : 516 : 948 : 402
+22=picas : inches : x/6 : x*6 : 784 : 516 : 423 : 603
+23=lightyears : meters : x*9.461*10^15 : x/(9.461*10^15) : 333 : 499 : 279 : 205
+
+[Power]
+1=hp : ft lb/s : x*550 : x/550 : 605 : 136 : 390 : 138
+2=W : ft lb/s : x*0.738 : x/0.738 : 397 : 306 : 390 : 138
+3=W : J/s : x : x : 397 : 306 : 562 : 435
+4=kW : W : x*1000 : x/1000 : 264 : 412 : 397 : 306
+
+[Pressure]
+1=kPa : Pa : x*1000 : x/1000 : 386 : 248 : 562 : 242
+2=atm : kPa : x*101.325 : x/101.325 : 313 : 62 : 386 : 248
+3=bar : Pa : x*1e5 : x/1e5 : 765 : 331 : 562 : 242
+4=mm Hg : Pa : x*133.322 : x/133.322 : 529 : 390 : 562 : 242
+5=lb/in^2 : kPa : x*6.894757 : x/6.894757 : 224 : 329 : 386 : 248
+6=cm Hg : mm Hg : x*10 : x/10 : 362 : 458 : 529 : 390
+7=Pa : N/m^2 : x : x : 562 : 242 : 786 : 161
+8=torr : mm Hg : x : x : 705 : 505 : 529 : 390
+9=lb/ft^2 : Pa : x*47.88 : x/47.88 : 527 : 47 : 562 : 242
+
+[Temperature]
+1=Celcius : Fahrenheit : 1.8*x+32 : (x-32)*5/9 : 409 : 244 : 597 : 244
+2=Celcius : Kelvin : x+273.15 : x-273.15 : 409 : 244 : 404 : 66
+3=Fahrenheit : Rankine : x+459.67 : x-459.67 : 597 : 244 : 589 : 414
+
+[Time]
+1=years : days : x*365 : x/365 : 323 : 128 : 329 : 291
+2=days : hours : x*24 : x/24 : 329 : 291 : 592 : 298
+3=hours : minutes : x*60 : x/60 : 592 : 298 : 597 : 446
+4=minutes : seconds : x*60 : x/60 : 597 : 446 : 338 : 438
+
+[Weight]
+1=tons (metric) : kilograms : x*1000 : x/1000 : 67 : 80 : 428 : 49
+2=kilograms : hectograms : x*10 : x/10 : 428 : 49 : 104 : 209
+3=hectograms : dekagrams : x*10 : x/10 : 104 : 209 : 79 : 372
+4=dekagrams : grams : x*10 : x/10 : 79 : 372 : 166 : 497
+5=grams : decigrams : x*10 : x/10 : 166 : 497 : 277 : 592
+6=decigrams : centigrams : x*10 : x/10 : 277 : 592 : 441 : 526
+7=centigrams : milligrams : x*10 : x/10 : 441 : 526 : 639 : 557
+8=tons (ST) : hundredweights : x*20 : x/20 : 853 : 429 : 852 : 171
+9=hundredweights : pounds : x*100 : x/100 : 852 : 171 : 610 : 166
+10=pounds : ounces : x*16 : x/16 : 610 : 166 : 630 : 436
+11=ounces : drams : x*16 : x/16 : 630 : 436 : 247 : 429
+12=ounces : grains : x*437.5 : x/437.5 : 630 : 436 : 312 : 249
+13=carats : milligrams : x*200 : x/200 : 836 : 515 : 639 : 557
+14=kilograms : pounds : x*2.2046 : x/2.2046 : 428 : 49 : 610 : 166

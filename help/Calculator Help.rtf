@@ -1,0 +1,1739 @@
+{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fcharset0 Arial;}{\f2\froman\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green128\blue128;\red0\green0\blue255;\red128\green128\blue128;}
+\viewkind4\uc1\pard\cf1\f0\fs40 Math and Complex Number Routines Category\fs20\par
+=====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Abs\cf0\b0  Routine Returns an absolute value. \par
+\cf3\b Syntax\cf0\b0\par
+function \b Abs\b0 (const AValue: TComplex): Double; \par
+\cf3\b Description\cf0\b0  \par
+Abs returns the absolute value of the argument, X. X is an integer-type or real-type expression.\par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcCos\cf0\b0  Routine Calculates the inverse cosine of a given number.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b ArcCos\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+ArcCos returns the inverse cosine of X. X must be between -1 and 1. The return value is in the range [0..Pi], in radians.\par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcCosH\cf0\b0  Routine Calculates the inverse hyperbolic cosine of a given number. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b ArcCosH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+ArcCosh returns the inverse hyperbolic cosine of X. The value of X must be greater than or equal to 1. \line\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcCot\cf0\b0  Routine Calculates the inverse cotangent of a given number. \par
+\cf3\b Syntax\cf0\par
+\b0 function \b ArcCot\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+ArcCot returns the inverse cotangent of X. \par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcCotH\cf0\b0  Routine Calculates the inverse hyperbolic cotangent of a given number. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b ArcCotH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+ArcCot returns the inverse hyperbolic cotangent of X. \par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcCsc\cf0\b0  Routine Calculates the inverse cosecant of a given number. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b ArcCsc\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\par
+\b0 ArcCsc returns the inverse cosecant of X. \par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcCscH\cf0\b0  Routine Calculates the inverse hyperbolic cosecant of a given number. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b ArcCscH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\par
+\b0 ArcCsc returns the inverse hyperbolic cosecant of X. \line\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcSec\cf0\b0  Routine Calculates the inverse secant of a given number. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b ArcSec\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\par
+\b0 ArcSec returns the inverse secant of X. \par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcSecH\cf0\b0  Routine Calculates the inverse hyperbolic secant of a given number. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b ArcSecH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+ArcSec returns the inverse hyperbolic secant of X. \line\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcSin\cf0\b0  Routine Calculates the inverse sine of a given number. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b ArcSin\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+ArcSin returns the inverse sine of X. X must be between -1 and 1. The return value will be in the range [-Pi/2..Pi/2], in radians. \line\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcSinH\cf0\b0  Routine Calculates the inverse hyperbolic sine of a given number. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b ArcSinH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\b0  \cf0\par
+ArcSinh returns the inverse hyperbolic sine of X.\par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b ArcTan\cf0\b0  Routine Calculates the arctangent of a given number. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b ArcTan\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\par
+\b0 In Delphi code, ArcTan returns the arctangent of X. X is a real-type expression that gives an angle in radians. \par
+\pard\cf1\lang1049 =====================================================\par
+\pard\sb100\sa100\cf0\lang1033\line\cf2\b ArcTan2\cf0\b0  Routine Calculates the arctangent angle and quadrant of a given number. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b ArcTan2\b0 (const Y: Extended, const X: Extended): Extended; \par
+\cf3\b Description\cf0\b0  \par
+ArcTan2 calculates ArcTan(Y/X), and returns an angle in the correct quadrant. The values of X and Y must be between -2^64 and 2^64. \par
+In addition, the value of X can\rquote t be 0. The return value will fall in the range from -Pi to Pi radians. \line\pard\cf1\lang1049 =====================================================\par
+\pard\sb100\sa100\cf0\lang1033\line\cf2\b ArcTanH\cf0\b0  Routine Calculates the inverse hyperbolic tangent of a given number. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b ArcTanH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+ArcTanh returns the inverse hyperbolic tangent of X. The value of X must be between -1 and 1 (inclusive).\par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Ceil\cf0\b0  Routine Rounds variables up toward positive infinity. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Ceil\b0 (const X: Extended): Integer; \par
+\cf3\b Description\par
+\cf0\b0  Call Ceil to obtain the lowest integer greater than or equal to X. The absolute value of X must be less than MaxInt. \par
+For example: Ceil(-2.8) = -2 Ceil(2.8) = 3 Ceil(-1.0) = -1\par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Cos\cf0\b0  Routine Calculates the cosine of an angle. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Cos\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\b0  \cf0\par
+In Delphi code, Cos returns the cosine of the angle X. X is a real-type expression that represents an angle in radians. \line\pard\cf1\lang1049 =====================================================\par
+\pard\sb100\sa100\cf0\lang1033\line\cf2\b Cosecant\cf0\b0  Routine Returns the cosecant of an angle. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b Cosecant\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\par
+\b0 Use the Cosecant to calculate the cosecant of X, where X is an angle in radians. The cosecant is calculated as 1/ Sin(X). \line\pard\cf1\lang1049 =====================================================\par
+\pard\sb100\sa100\cf0\lang1033\line\cf2\b CosH\cf0\b0  Routine Calculates the hyperbolic cosine of an angle. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b CosH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Use the Cosh to calculate the hyperbolic cosine of X. \line\pard\cf1\lang1049 =====================================================\par
+\pard\sb100\sa100\cf0\lang1033\line\cf2\b Cot\cf0\b0  Routine Calculates the cotangent of an angle. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b Cot\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\b0  \cf0\par
+Call Cot to obtain the cotangent of X. The cotangent is calculated using the formula 1 / Tan(X). \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Cotan\cf0\b0  Routine Calculates the cotangent of an angle. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Cotan\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Call Cotan to obtain the cotangent of X. The cotangent is calculated using the formula 1 / Tan(X) \par
+Note: Note:Do not call Cotan with X = 0. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b CotH\cf0\b0  Routine Calculates the hyperbolic cotangent of an angle. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b CotH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Call CotH to obtain the hyperbolic cotangent of X, where X is an angle in Radians.\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Csc\cf0  \b0 Routine Returns the cosecant of an angle.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b Csc\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\par
+\b0 Use the Csc to calculate the cosecant of X, where X is an angle in radians. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b CscH\cf0\b0  Routine Returns the hyperbolic cosecant of an angle.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b CscH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Use the CscH to calculate the hyperbolic cosecant of X, where X is an angle in radians.\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b DegToRad\cf0\b0  Routine Returns the value of a degree measurement expressed in radians. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DegToRad\b0 (const Degrees: Extended): Extended; \par
+\cf3\b Description\cf0\b0  \par
+Use DegToRad to convert angles expressed in degrees to the corresponding value in radians, where radians = degrees(pi/180). \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b DoubleDecliningBalance\cf0\b0  Routine Calculates the depreciation of an asset using the double-declining balance method. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DoubleDecliningBalance\b0 (const \b Cost\b0 : Extended, const \b Salvage\b0 : Extended, \b Life\b0 : Integer, \b Period\b0 : Integer): Extended; \par
+\cf3\b Description\cf0\b0  \par
+DoubleDecliningBalance determines accelerated depreciation values for an asset, given the initial \b Cost\b0 , \b Life\b0  expectancy, end value, and depreciation \b Period\b0 . \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Floor\cf0\b0  Routine Rounds variables toward negative infinity.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b Floor\b0 (const X: Extended): Integer; \par
+\cf3\b Description\cf0\b0  \par
+Call Floor to obtain the highest integer less than or equal to X. For example: Floor(-2.8) = -3 Floor(2.8) = 2 Floor(-1.0) = -1 \par
+Note: Note:The absolute value of X must be less than MaxInt. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b FutureValue\cf0\b0  Routine Calculates the future value of an investment. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b FutureValue\b0 (const \b Rate\b0 : Extended, \b NPeriods\b0 : Integer, const \b Payment\b0 : Extended, const \b PresentValue\b0 : Extended, \b PaymentTime\b0 : TPaymentTime): Extended; \par
+\cf3\b Description\cf0\par
+\b0  FutureValue returns the future value of an investment of \b PresentValue\b0  where \b Payment\b0  is invested for \b NPeriods\b0  at the rate of \b Rate\b0  per period. The \b PaymentTime\b0  parameter indicates whether the investment is an ordinary annuity or an annuity due (enter \b 0\b0  if payments are at the end of each period, \b 1\b0  if they are at the beginning). \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Exp\cf0\b0  Routine Returns the exponential of X. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Exp\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+In Delphi code, Exp returns the value of e raised to the power of X, where e is the base of the natural logarithms. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Frac\cf0\b0  Routine Returns the fractional part of a real number. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Frac\b0 (const AValue: Double): Double; \par
+\cf3\b Description\cf0\b0  \par
+In Delphi code, the Frac function returns the fractional part of the argument X. X is a real-type expression. The result is the fractional part of X; that is, Frac(X) = X - Int(X). \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Int\cf0\b0  Routine Returns the integer part of a real number. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b Int\b0 (const AValue: Double): Double; \par
+\cf3\b Description\cf0\b0  \par
+In Delphi code, Int returns the integer part of X; that is, X rounded toward zero. X is a real-type expression\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b InterestPayment\cf0\b0  Routine Calculates the interest portion of a loan payment. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b InterestPayment\b0 (const \b Rate\b0 : Extended, \b Period\b0 : Integer, \b NPeriods\b0 : Integer, const \b PresentValue\b0 : Extended, const \b FutureValue\b0 : Extended, \b PaymentTime\b0 : TPaymentTime): Extended; \par
+\cf3\b Description\cf0\par
+\b0  Call InterestPayment to calculate the portion of a loan payment that reflects the interest. \b Rate\b0  represents the fixed periodic interest rate. \b Period\b0  identifies the payment period. \b NPeriods\b0  is the number of periods of the loan. \b PresentValue\b0  represents the amount borrowed (the principal). \b FutureValue\b0  is the future value of the investment. \b PaymentTime\b0  indicates whether the cash flows occur at the beginning or end of the period (enter \b 0\b0  if payments are at the end of each period, \b 1\b0  if they are at the beginning). \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b InterestRate\cf0\b0  Routine Returns the interest rate required to increase PresentValue to FutureValue.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b InterestRate\b0 (\b NPeriods\b0 : Integer, const \b Payment\b0 : Extended, const \b PresentValue\b0 : Extended, const \b FutureValue\b0 : Extended, \b PaymentTime\b0 : TPaymentTime): Extended; \par
+\cf3\b Description\cf0\b0  \par
+InterestRate calculates the interest rate required in order for an investment of \b PresentValue\b0 , with periodic payments of \b Payment\b0 , to be worth \b FutureValue\b0  within \b NPeriods\b0  compounding periods. If \b NPeriods\b0  represents years, an annual interest rate results; if NPeriods represents months, a monthly interest rate results, and so on. The \b PaymentTime\b0  parameter indicates whether the cash flows occur at the beginning or end of the period (enter \b 0\b0  if payments are at the end of each period, \b 1\b0  if they are at the beginning).  \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b InternalRateOfReturn\cf0\b0  Routine Calculates the internal rate of return for an investment. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b InternalRateOfReturn\b0 (const \b Guess\b0 : Extended, const \b CashFlows\b0 : array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\b0  \cf0\par
+InternalRateOfReturn determines the internal rate of return on an investment. It references an array that contains cash flow information and uses the supplied internal rate of return estimate to calculate results. Before using this function, define an array containing expected cash flow amounts over a period of time. It is assumed that the amounts are received at regular intervals. Negative amounts are interpreted as cash outflows, and positive amounts as inflows. The first amount must be a negative number, to reflect the initial investment. The following amounts can all be the same for each time period, or they can be different (including a mixture of negatives, positives, or zeros). Specify the estimated rate of return as the \b Guess\b0  parameter. Pass the array of expected cash flow amounts as the \b CashFlows\b0  parameter. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b IsNan\cf0\b0  Routine Indicates when a variable or expression does not evaluate to a numeric value. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b IsNan\b0 (const AValue: Double): Boolean; \par
+\cf3\b Description\cf0\b0  \par
+Use IsNan to test whether the value specified by AValue represents NaN (not a number). Note that NaN is distinct from positive and negative infinity, which can be detected using the IsInfinite function. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Ln, Log\cf0\b0  Routines Returns the natural log of a real expression. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Ln\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\par
+\b0  In Delphi code, Ln returns the natural logarithm (Ln(e) = 1) of the real-type expression X. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b LnXP1\cf0\b0  Routine Returns the natural log of (X+1) \par
+\cf3\b Syntax\cf0\b0  \par
+function \b LnXP1\b0 (const X: Extended): Extended; \par
+\cf3\b Description\cf0\b0  \par
+LnXP1 returns the natural logarithm of (X+1). Use LnXP1 when X is a value near 0. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Log10\cf0\b0  Routine Calculates log base 10. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Log10\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\b0  \cf0\par
+Log10 returns the log base 10 of X. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Log2\cf0\b0  Routine Calculates log base 2. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Log2\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\b0  \cf0\par
+Log2 returns the log base 2 of X.\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b LogN\cf0\b0  Routine Calculates the log of X for a specified base. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b LogN\b0 (const AValue: TComplex, const X: Double): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+LogN returns the log base Base of X. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Kurtosis\cf0\b0  Routine Calculates  kurtosis.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b Kurtosis\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended;\par
+\cf3\b Description\cf0\par
+\b0 Kurtosis calculates the core factors of statistical analysis: kurtosis. Data specifies the data to be analyzed. Kurtosis reflects flatness of distribution\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Max\cf0\b0  Routine Returns the largest signed value in an array. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Max\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Double; \par
+\cf3\b Description\cf0\b0  \par
+Max returns the largest signed value in the Data array. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b Mean\cf0\b0  Routine Returns the average of all values in an array. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Mean\b0 (const Data: array of Double): Extended; \par
+\cf3\b Description\cf0\b0  \par
+Mean calculates the arithmetic average of all the values in the Data array parameter. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Min\cf0\b0  Routine Returns smallest signed value in an array. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Min\b0 (const Data: array of Double (\b 1,2,3,...\b0 )): Double; \par
+\cf3\b Description\cf0\b0  \par
+Min returns the smallest signed value in the Data array. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Moment3\cf0\b0  Routine Calculates the Moment 3.\cf2\b  \cf0\b0\par
+\cf3\b Syntax\cf0\b0  \par
+function \b Moment3\b0 (const Data: array of Double (\b 1,2,3,...\b0 )): Double; \par
+\cf3\b Description\cf0\b0  \par
+Moment3 calculates the core factors of statistical analysis: the Moment 3. Data specifies the data to be analyzed. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Moment4\cf0\b0  Routine Calculates the Moment 4.\cf2\b  \cf0\b0\par
+\cf3\b Syntax\cf0\b0  \par
+function \b Moment4\b0 (const Data: array of Double (\b 1,2,3,...\b0 )): Double; \par
+\cf3\b Description\cf0\b0  \par
+Moment4 calculates the core factors of statistical analysis: the Moment 4. Data specifies the data to be analyzed. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b NetPresentValue\cf0\b0  Routine Calculates the current value from an array of estimated cash flow values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b NetPresentValue\b0 (const \b Rate\b0 : Extended, const \b CashFlows\b0 : array of Double (\b 1,2,3...,\b0 ), \b PaymentTime\b0 : TPaymentTime): Extended\par
+\cf3\b Description\cf0\b0  \par
+NetPresentValue calculates the current value of an array of estimated cash flow values, discounted at the given interest rate of \b Rate\b0 . \b CashFlows\b0  is the array of estimated cash flow values. \b PaymentTime\b0  indicates whether the cash flows occur at the beginning or end of the period (enter \b 0\b0  if payments are at the end of each period, \b 1\b0  if they are at the beginning). NetPresentValue helps determine how much an investment is currently worth, based on expected earnings, although its accuracy depends on the accuracy of the cash flows in the array.\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Norm\cf0\b0  Routine Returns the Euclidean 'L-2' norm. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b Norm\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\cf0\b0  \par
+Norm returns the Euclidean 'L-2' norm for the values in the Data array. The 'L-2' norm is the square root of the sum of squares. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b NumberOfPeriods\cf0\b0  Routine Returns the number of payment periods for an investment. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b NumberOfPeriods\b0 (const \b Rate\b0 : Extended, \b Payment\b0 : Extended, const \b PresentValue\b0 : Extended, const \b FutureValue\b0 : Extended, \b PaymentTime\b0 : TPaymentTime): Extended; \par
+\cf3\b Description\cf0\b0  \par
+NumberOfPeriods computes the number of payment periods required for an investment of \b PresentValue\b0  to reach a value of \b FutureValue\b0 , while making regular payments of \b Payment\b0  and accruing interest at the rate of \b Rate\b0  per compounding period. \b PaymentTime\b0  indicates whether the cash flows occur at the beginning or end of the period (enter \b 0\b0  if payments are at the end of each period, \b 1\b0  if they are at the beginning).  \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Payment \cf0\b0 Routine Calculates a fully amortized payment. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Payment\b0 (\b Rate\b0 : Extended, \b NPeriods\b0 : Integer, const \b PresentValue\b0 : Extended, const \b FutureValue\b0 : Extended,\b  PaymentTime\b0 : TPaymentTime): Extended; \par
+\cf3\b Description\cf0\b0  \par
+Payment calculates the fully amortized payment of borrowing \b PresentValue\b0  at \b Rate\b0  percent per period over \b NPeriods\b0 . It assumes that interest is paid at the end of each period. \b FutureValue\b0  is the value that the investment will reach at some point. \b PaymentTime\b0  indicates whether the cash flows occur at the beginning or end of the period (enter \b 0\b0  if payments are at the end of each period, \b 1\b0  if they are at the beginning).\line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b PeriodPayment\cf0\b0  Routine Returns the principal amount from a full payment. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b PeriodPayment\b0 (const \b Rate\b0 : Extended, \b Period\b0 : Integer, \b NPeriods\b0 : Integer, const \b PresentValue\b0 : Extended, const \b FutureValue\b0 : Extended, \b PaymentTime\b0 : TPaymentTime): Extended; \par
+\cf3\b Description\cf0\b0  \par
+PeriodPayment gives the part of the payment that is principal. The InterestPayment function gives the part of the payment that is interest. The \b Rate\b0  parameter is the interest rate. \b Period\b0  is the number of periods into the loan for which the principal is desired, and \b NPeriods\b0  is the number of periods of the loan. \b FutureValue\b0  is the value the investment will reach at some point. \b PaymentTime\b0  indicates whether the cash flows occur at the beginning or end of the period (enter \b 0\b0  if payments are at the end of each period, \b 1\b0  if they are at the beginning).\line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b PopnStdDev\cf0\b0  Routine Calculates the population standard deviation.\par
+\cf3\b Syntax\b0  \cf0\par
+function \b PopnStdDev\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\cf0\b0  \par
+PopnStdDev calculates the population standard deviation (the square root of the population variance) of all values in the Data array parameter. This function is used in some business and financial calculations. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b PopnVariance\cf0\b0  Routine Calculates the population variance.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b PopnVariance\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\cf0\b0  \par
+PopnVariance calculates the population variance of all values in the Data array parameter, using the n method (biased): TotalVariance / n. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Power\cf0\b0  Routine Raises Base to any power.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b Power\b0 (const AValue: TComplex, const APower: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Power raises Base to any power. For fractional exponents or exponents greater than MaxInt, Base must be greater than 0. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b PresentValue\cf0\b0  Routine Calculates the present value of an investment. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b PresentValue\b0 (const \b Rate\b0 : Extended, \b NPeriods\b0 : Integer, const \b Payment\b0 : Extended, const \b FutureValue\b0 : Extended, \b PaymentTime\b0 : TPaymentTime): Extended; \par
+\cf3\b Description\cf0\b0  \par
+PresentValue calculates the present value of an investment where \b Payment\b0  is received for \b NPeriods\b0  and is discounted at the rate of \b Rate\b0  per period. \b FutureValue\b0  is the value the investment may reach at some point. \b PaymentTime\b0  indicates whether the cash flows occur at the beginning or end of the period(enter \b 0\b0  if payments are at the end of each period, \b 1\b0  if they are at the beginning).\line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b RadToDeg\cf0\b0  Routine Converts radians to degrees. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b RadToDeg\b0 (const Radians: Extended): Extended; \par
+\cf3\b Description\cf0\b0  \par
+Use RadToDeg to convert angles measured in radians to degrees, where degrees = radians(180/pi). \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Sec, Secant\cf0\b0  Routines Calculates the secant of an angle. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Sec\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Call Sec to obtain the secant of X, where X is an angle in radians. The secant is calculated using the formula 1 / Cos(X). \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b SecH\cf0\b0  Routine Calculates the hyperbolic secant of an angle. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SecH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Call SecH to obtain the hyperbolic secant of X, where X is an angle in Radians. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Sign\cf0\b0  Routine Indicates whether a numeric value is positive, negative, or zero. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Sign\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Use Sign to test the sign of a numeric value. Sign returns 0 if AValue is zero. 1 if AValue is greater than zero. -1 if AValue is less than zero. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Sin\cf0\b0  Routine Returns the sine of the angle in radians. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Sin\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+In Delphi code, the Sin function returns the sine of the argument. X is a real-type expression. Sin returns the sine of the angle X in radians. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b SinH\cf0\b0  Routine Returns the hyperbolic sine of an angle. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SinH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Sinh calculates the hyperbolic sine of X. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b SLNDepreciation\cf0\b0  Routine Returns the straight-line depreciation allowance of an asset. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SLNDepreciation\b0 (const \b Cost\b0 : Extended, const \b Salvage\b0 : Extended, \b Life\b0 : Integer): Extended; \par
+\cf3\b Description\cf0\b0  \par
+SLNDepreciation calculates the straight-line depreciation allowance for an asset over one period of its life. The function divides the \b Cost\b0  minus the \b Salvage\b0  by the number of years of useful \b Life\b0  of the asset. \b Cost\b0  is the amount initially paid for the asset. \b Salvage\b0  is the value of the asset at the end of its useful life.\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Skew\cf0\b0  Routine Calculates skew.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b Skew\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended;\par
+\cf3\b Description\cf0\par
+\b0 Skew calculates the core factors of statistical analysis: skew. Data specifies the data to be analyzed. Skew reflects symmetry of distribution. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b StdDev\cf0\b0  Routine Returns the sample standard deviation for elements in an array. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b StdDev\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\cf0\b0  \par
+StdDev calculates the sample standard deviation (the square root of the sample variance) of all values in the Data array parameter.\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Sum\cf0\b0  Routine Returns the sum of the elements in an array. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b Sum\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\cf0\b0  \par
+Sum returns the sum of all the values in the Data array parameter. \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b SumOfSquares\cf0\b0  Routine Returns the sum of the squared values from a data array. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SumOfSquares\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\b0  \cf0\par
+SumOfSquares returns the sum of the squares of the Data values: Data[0]^2 + Data[1]^2 + Data[2]^2... \par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Sqr\cf0\b0  Routine Returns the square of a number. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b Sqr\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+In Delphi code, the Sqr function returns the square of the argument. X is a floating-point expression. The result, of the same type as X, is the square of X, or X*X.\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Sqrt\cf0\b0  Routine Returns the square root of X. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Sqrt\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\b0  \cf0\par
+X is a Delphi floating-point expression. The result is the square root of X. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b SYDDepreciation\cf0\b0  Routine Calculates depreciation for an asset. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SYDDepreciation\b0 (const \b Cost\b0 : Extended, const \b Salvage\b0 : Extended, \b Life\b0 : Integer,\b  Period\b0 : Integer): Extended; \par
+\cf3\b Description\cf0\b0  \par
+SYDDepreciation (for "sum-of-years-digits depreciation") calculates depreciation amounts for an asset using an accelerated depreciation method. This allows for higher depreciation in the earlier years of an asset's life. \b Cost\b0  is the initial cost of the asset. \b Salvage\b0  is the value of the asset at the end of its life expectancy.\b  Life \b0 is the length of the asset's life expectancy. \b Period\b0  is the period for which to calculate the depreciation\par
+\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Tan\cf0\b0  Routine Returns the tangent of X. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Tan\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Tan returns the tangent of X. Tan(X) = Sin(X) / Cos(X). \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b TanH\cf0\b0  Routine Returns the hyperbolic tangent of X. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b TanH\b0 (const AValue: TComplex): TComplex; \par
+\cf3\b Description\cf0\b0  \par
+Tanh calculates the hyperbolic tangent of X. \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b TotalVariance\cf0\b0  Routine Returns the statistical variance from an array of values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b TotalVariance\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\cf0\b0  \par
+TotalVariance returns the sum of the squares of the difference between each Data value and the mean of the data values. Total Variance: SUM(i=1,N)[(X(i) - Mean)**2] \line\pard\cf1\lang1049 =====================================================\cf0\par
+\lang1033\par
+\pard\sb100\sa100\cf2\b Variance\cf0\b0  Routine Calculates statistical sample variance from an array of data. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Variance\b0 (const Data: array of Double (\b 1,2,3...\b0 )): Extended; \par
+\cf3\b Description\cf0\b0  \par
+Variance calculates the sample variance of all values in the Data array parameter, using the n-1 method (unbiased). \par
+\pard\cf1\lang1049\par
+\par
+\fs40 Statistical Routines for Probability and Distributions Category\par
+\fs20 =====================================================\par
+\cf0\par
+\cf2\b Beta\cf0\b0  Function \par
+Returns Beta(X,Y) using a Series Expansion for 1/Gamma (X) as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b Beta\b0 (const \b X, Y\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Defined for all values of \b X\b0  and \b Y\b0  except negative integers and 0.\par
+\par
+Accuracy: Gives about 15 digits.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b X\b0   First Value to process. \par
+\b Y\b0   Second Value to process. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b Gamma\cf0\b0  Function \par
+Returns Gamma(X) using a Series Expansion for 1/Gamma (X) as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b Gamma\b0 (const \b X\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Defined for all values of X except negative integers and 0.\par
+\par
+Accuracy: Gives about 15 digits.\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b X \b0  Value to process. \par
+\cf1 =====================================================\cf0\par
+\cf2\b\par
+Hermite\cf0\b0  Function \par
+Returns a Hermite Polynomial of order N evaluated at \b X\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b Hermite\b0 (const \b X\b0 : Extended; const \b N\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b X\b0   Value to process. \par
+\b N\b0   Order of Hermite \par
+\cf1 =====================================================\cf0\par
+\cf2\b\par
+IncompleteBeta\cf0\b0  Function \par
+Returns the Incomplete Beta Ix(\b P, Q\b0 ), where 0 <= \b X\b0  <= 1 and \b P\b0  and\b  Q \b0 are positive.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b IncompleteBeta\b0 (\b X\b0 : Extended; \b P, Q\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+The Incomplete Beta function is the probability that a random variable from a Beta distribution having parameters P and Q will be less than or equal to X. Accuracy: Gives about 17 digits. Adapted From Collected Algorithms from CACM, Algorithm 179 - Incomplete Beta Function Ratios, Oliver G Ludwig.\par
+\cf1 =====================================================\cf0\par
+\cf2\b\par
+InverseGamma \cf0\b0 Function \par
+Returns 1/Gamma(X) using a Series Expansion as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b InverseGamma\b0 (const \b X\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Defined for all values of \b X\b0 .\par
+\par
+Accuracy: Gives about 15 digits.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b X\b0   Value to process. \par
+\cf1 =====================================================\cf0\par
+\cf2\b\par
+LnBeta \cf0\b0 Function \par
+Returns the Natural Logarithm of Beta(X,Y) using a LnGamma (X) as defined above.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b LnBeta\b0 (const \b X, Y\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+\b X\b0  and \b Y \b0 must be positive.\par
+\par
+Accuracy: Gives about 15 digits.\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b X \b0  First Value to process. \par
+\b Y\b0   Second Value to process. \par
+\cf1 =====================================================\cf0\par
+\cf2\b\par
+LnGamma\cf0\b0  Function \par
+Logarithm to base e of the gamma function.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b LnGamma\b0 (const \b X\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Defined for all positive values of \b X\b0 .\par
+\par
+Accurate to about 14 digits.\par
+\par
+Programmer: Alan Miller - developed for Fortan 77, converted with permission.\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b X\b0   Value to process. \par
+\cf1 =====================================================\cf0\par
+\cf2\b\par
+BinomialBetween\cf0\b0  Function \par
+Returns the Result for Pr (\b A\b0  < X < \b B\b0 ) for a Binomial Distribution of \b N\b0  Trials where the probability of a success = \b P\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b BinomialBetween\b0 (const \b P\b0 : Extended; const \b N, A, B\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b P\b0   Probability of Success, 0 <= \b P\b0  <= 1 \par
+\b N\b0   Number of Trials, must be positive. \par
+\b A\b0   Lower Value at which to evaluate. \par
+\b B\b0   Upper Value at which to evaluate. \par
+\cf1\f1 =====================================================\cf0\par
+\par
+\cf2\b BinomialCoeff\cf0\b0  Function \par
+Returns the Binomial Coefficient of \b N\b0  by \b R\b0  as an Extended Float, thus allowing for large values.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b BinomialCoeff\b0 (const \b N, R\b0 : LongWord): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Binomial Coefficient of \b N\b0  by\b  R \b0 is also known as the Combination of \b N\b0  by \b R\b0 , written as nCr, \par
+which is the number of ways you can arrange \b R\b0  objects from \b N\b0  objects, when order is unimportant.\par
+\par
+Binomial Coefficients as\b  R \b0 goes from 0 to \b N\b0  are the coefficients of the terms when expanding (a + b)^\b N\b0 .\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b N\b0   Total Number of Items. \par
+\b R\b0   Number of Chosen Items \par
+\par
+\cf1 =====================================================\cf0\par
+\par
+\cf2\b BinomialEq\cf0\b0  Function \par
+Returns the Result for Pr (X = \b A\b0 ) for a Binomial Distribution of \b N\b0  Trials where the probability of a success = \b P\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b BinomialEq\b0 (const \b P\b0 : Extended; const \b N, A\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b P\b0   Probability of Success, 0 <=\b  P \b0 <= 1 \par
+\b N\b0   Number of Trials, must be positive. \par
+\b A\b0   Value at which to evaluate. \par
+\cf1 =====================================================\cf0\par
+\par
+\cf2\b BinomialGreater\cf0\b0  Function \par
+Returns the Result for Pr (X > \b A\b0 ) for a Binomial Distribution of \b N\b0  Trials where the probability of a success = \b P\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b BinomialGreater\b0 (const \b P\b0 : Extended; const \b N, A\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\b0  \cf0\par
+\b P\b0   Probability of Success, 0 <= \b P\b0  <= 1 \par
+\b N\b0   Number of Trials, must be positive. \par
+\b A\b0   Value at which to evaluate. \par
+\cf1 =====================================================\cf0\par
+\par
+\cf2\b BinomialLess\cf0\b0  Function \par
+Returns the Result for Pr (X < \b A\b0 ) for a Binomial Distribution of \b N\b0  Trials where the probability of a success = \b P\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b BinomialLess\b0 (const \b P\b0 : Extended; const \b N, A\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b P\b0   Probability of Success, 0 <= \b P\b0  <= 1 \par
+\b N\b0   Number of Trials, must be positive. \par
+\b A\b0   Value at which to evaluate. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b ChiSquareBetween\cf0\b0  Function \par
+Calculates the Pr (\b Chi2A\b0  < X < \b Chi2B\b0 ) with given Degrees of Freedom (\b DF\b0 ), using a Series Expansion as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b ChiSquareBetween\b0 (const \b Chi2A, Chi2B\b0 : Extended; const \b DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+\par
+\b Chi2\b0  must be NonNegative and \b DF\b0  > 0.\par
+\par
+Uses NormalGreater and NormalZ thus has a high degree of accuracy.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Chi2A\b0   Lower Value at which to Evaluate, must be Non-Negative. \par
+\b Chi2B\b0   Upper Value at which to Evaluate, must be Non-Negative. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b ChiSquareGreater\cf0\b0  Function \par
+Calculates the Pr (X > \b Chi2\b0 ) with given Degrees of Freedom (\b DF\b0 ), using a Series Expansion as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  ChiSquareGreater\b0 (const \b Chi2\b0 : Extended; const \b DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+\b Chi2\b0  must be NonNegative and \b DF\b0  > 0.\par
+\par
+This uses NormalGreater and NormalZ and has a high degree of accuracy.\par
+\par
+\cf3\b Parameters\b0  \cf0\par
+\b Chi2\b0   Value at which to Evaluate, must be Non-Negative. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b ChiSquareLess\cf0\b0  Function \par
+Calculates the Pr (X < \b Chi2\b0 ) with given Degrees of Freedom (\b DF\b0 ), using a Series Expansion as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b ChiSquareLess\b0 (const \b Chi2\b0 : Extended; const \b DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Description\par
+\cf0\b0 This uses NormalGreater and NormalZ and has a high degree of accuracy.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Chi2\b0   Value at which to Evaluate, must be Non-Negative. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b ExponentialBetween\cf0\b0  Function \par
+Returns the Result for Pr (\b A\b0  < X < \b B\b0 ) for an Exponential Distribution with given Mean.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b ExponentialBetween\b0 (const \b Mu, A, B\b0 : Extended): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Mu\b0   Mean of the Distribution, must be Positive. \par
+\b A\b0   Lower Value at which to evaluate, must be Non-Negative. \par
+\b B\b0   Upper Value at which to evaluate, must be Non-Negative. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b ExponentialGreater\cf0\b0  Function \par
+Returns the Result for Pr (X > \b A\b0 ) for an Exponential Distribution with given Mean.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b ExponentialGreater\b0 (const \b Mu, A\b0 : Extended): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Mu\b0   Mean of the Distribution, must be Positive. \par
+\b A\b0   Value at which to evaluate, must be Non-Negative \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b ExponentialLess\cf0\b0  Function \par
+Returns the Result for Pr (X < \b A\b0 ) for an Exponential Distribution with given Mean.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b ExponentialLess\b0 (const \b Mu, A\b0 : Extended): Extended;\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b Mu\b0   Mean of the Distribution, must be Positive. \par
+\b A\b0   Value at which to evaluate, must be Non-Negative. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b\f0 FDistBetween\cf0\b0  Function \par
+Calculates the Pr (\b FA\b0  < X < \b FB\b0 ) with given Degrees of Freedom (\b DF1, DF2\b0 ), for a \b F\b0  Distribution, using a Incomplete Beta Function as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b FDistBetween\b0 (const \b FA, FB\b0 : Extended; const\b  DF1, DF2\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b FA\b0   Lower Value at which to Evaluate, must be Non-Negative. \par
+\b FB\b0   Upper Value at which to Evaluate, must be Non-Negative. \par
+\b DF1\b0   First Degrees of Freedom, must be Positive. \par
+\b DF2\b0   Second Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 FDistGreater\cf0\b0  Function \par
+Calculates the Pr (X > \b F\b0 ) with given Degrees of Freedom (\b DF1, DF2\b0 ) for a \b F\b0  Distribution, using a Incomplete Beta Function as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b FDistGreater\b0 (const \b F\b0 : Extended; const \b DF1, DF2\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b F\b0   Value at which to Evaluate, must be Non-Negative. \par
+\b DF1\b0   First Degrees of Freedom, must be Positive. \par
+\b DF2\b0   Second Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 FDistLess\cf0\b0  Function \par
+Calculates the Pr (X < \b F\b0 ) with given Degrees of Freedom (\b DF1, DF2\b0 ) for a \b F\b0  Distribution, using a Incomplete Beta Function as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b FDistLess\b0 (const \b F\b0 : Extended; const\b  DF1, DF2\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b F \b0  Value at which to Evaluate, must be Non-Negative. \par
+\b DF1\b0   First Degrees of Freedom, must be Positive. \par
+\b DF2\b0   Second Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 IncompleteGamma\cf0\b0  Function \par
+Returns Incomplete Gamma(X) (small gamma).\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b IncompleteGamma\b0 (const \b P, X\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+ALGORITHM AS239 APPL. STATIST. (1988) VOL. 37, NO. 3 Computation of the Incomplete Gamma Integral This has a high degree of accuracy.\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b P\b0   Must be Positive. \par
+\b X\b0   Must be Non-Negative. \par
+\cf1\f1 =====================================================\par
+\cf2\b IncompleteGamma2\cf0\b0  Function \par
+Returns Incomplete Gamma(X) (big gamma) derived from ChiSquareGreater as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b IncompleteGamma2\b0 (const \b A, X\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\par
+\cf0\b0 This uses NormalGreater and NormalZ and has a high degree of accuracy.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b A\b0   Must be Positive. \par
+\b X \b0  Must be Non-Negative. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b\f0 InvChiSquareGreater\cf0\b0  Function \par
+Returns the Original \b Chi2\b0  for Pr (X > \b Chi2\b0 ) = \b PVal\b0  for a Chi-Square Distribution with given Degrees of Freedom.\par
+\par
+\cf3\b Declaration\par
+\cf0\b0 Function\b  InvChiSquareGreater\b0 (const \b PVal\b0 : Extended; const\b  DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b PVal\b0   Probability at which to Evaluate, must be 0 < \b PVal \b0 < 1. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 InvChiSquareLess\cf0\b0  Function \par
+Returns the Original \b Chi2\b0  for Pr (X < \b Chi2\b0 ) = \b PVal\b0  for a Chi-Square Distribution with given Degrees of Freedom.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b InvChiSquareLess\b0 (const \b PVal\b0 : Extended; const \b DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b PVal\b0   Probability at which to Evaluate, must be 0 < \b PVal\b0  < 1. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 InvFDistGreater\cf0\b0  Function \par
+Returns the Original \b F\b0  for Pr (X > \b F\b0 ) = \b PVal\b0  for a \b F\b0  Distribution with given Degrees of Freedom.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  InvFDistGreater\b0 (const \b PVal\b0 : Extended; const \b DF1, DF2\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b PVal\b0   Probability at which to Evaluate, must be 0 < \b PVal\b0  < 1. \par
+\b DF1\b0   First Degrees of Freedom, must be Positive. \par
+\b DF2\b0   Second Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 InvFDistLess\cf0\b0  Function \par
+Returns the Original \b F\b0  for Pr (X < \b F\b0 ) = \b PVal\b0  for a \b F\b0  Distribution with given Degrees of Freedom.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  InvFDistLess\b0 (const \b PVal\b0 : Extended; const \b DF1, DF2\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b PVal\b0   Probability at which to Evaluate, must be 0 < \b PVal\b0  < 1. \par
+\b DF1\b0   First Degrees of Freedom, must be Positive. \par
+\b DF2\b0   Second Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\par
+\cf2\b InvLogNormalGreater\cf0\b0  Function \par
+Returns the Original \b AVal\b0  for Pr (X > \b AVa\b0 l) = \b PVal\b0  for a LogNormal Distribution with given Mean and Standard Deviation.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  InvLogNormalGreater\b0 (const \b Mean, StdDev, PVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Uses an approximation from Abramowitx & Stegun, which is then refined for increased accuracy.\par
+\par
+Standard Deviation must be > 0\par
+\par
+\b PVal\b0  (Probability) must be 0 < \b PVal\b0  < 1\par
+\par
+Accuracy: to about 15 sifnicant figures.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev\b0   Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b PVal\b0   Probability to use. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b InvLogNormalLess\cf0\b0  Function \par
+Returns the Original \b AVal \b0 for Pr (X < \b AVal\b0 ) = \b PVal\b0  if Less is True, or Pr (X > \b AVal\b0 ) =\b  PVal \b0 if Less is False, for a LogNormal Distribution with given Mean and Standard Deviation.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  InvLogNormalLess\b0 (const \b Mean\b0 , \b StdDev, PVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Uses an approximation from Abramowitx & Stegun, which is then refined for increased accuracy.\par
+\par
+Standard Deviation must be > 0\par
+\par
+PVal (Probability) must be 0 < \b PVal\b0  < 1\par
+\par
+Accuracy: to about 15 sifnicant figures.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev\b0   Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b PVal \b0  Probability to use. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b InvNormalDistGreater\cf0\b0  Function \par
+Returns the Original \b AVal\b0  for Pr (X > \b AVal\b0 ) = \b PVal\b0  for a Normal Distribution with given Mean and Standard Deviation.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b InvNormalDistGreater\b0 (const \b Mean, StdDev, PVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Uses an approximation from Abramowitx & Stegun, which is then refined for increased accuracy.\par
+\par
+Standard Deviation must be > 0\par
+\par
+PVal (Probability) must be 0 < \b PVal \b0 < 1\par
+\par
+Accuracy: to about 15 sifnicant figures\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev\b0   Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b PVal\b0   Probability to use. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b InvNormalGreater\cf0\b0  Function \par
+Returns Inverse Q(X) for the Standard Normal Distribution.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b InvNormalGreater\b0 (const\b  P\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+The \b P\b0  passed in is the probability and thus must have 0 < \b P\b0  < 1.\par
+\par
+This uses an Algorithm that gives about 16 digit accuracy!\par
+\par
+Based on Algorithm AS241 (in Fortran) from Applied Statistics (1988) Vol. 37, no. 3, 477-484.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b P\b0   Probability to process. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b InvNormalLess\cf0\b0  Function \par
+Returns Inverse P(X) for the Standard Normal Distribution.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b InvNormalLess\b0 (const \b P\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+The \b P\b0  passed in is the probability and thus must have 0 < \b P\b0  < 1.\par
+\par
+This uses an Algorithm that gives about 16 digit accuracy!\par
+\par
+Based on Algorithm AS241 (in Fortran) from Applied Statistics (1988) Vol. 37, no. 3, 477-484.\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b P\b0   Probability to process. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b InvStudentTGreater\cf0\b0  Function \par
+Returns the Original \b T\b0  for Pr (X > \b T\b0 ) = \b PVal\b0  for a Student \b T\b0  Distribution with given Degrees of Freedom.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  InvStudentTGreater\b0 (const\b  PVal\b0 : Extended; const \b DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Accuracy: to about 15 significant digits. Much less accuracy when Degrees of Freedom > 1500\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b PVal\b0   Probability at which to Evaluate, must be 0 < \b PVal\b0  < 1. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b InvStudentTLess\cf0\b0  Function \par
+Returns the Original \b T\b0  for Pr (X < \b T\b0 ) = \b PVal \b0 for a Student \b T\b0  Distribution with given Degrees of Freedom.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  InvStudentTLess\b0 (const \b PVal\b0 : Extended; const \b DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Accuracy: to about 15 significant digits. Much less accuracy when Degrees of Freedom > 1500\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b PVal\b0   Probability at which to Evaluate, must be 0 < \b PVal\b0  < 1. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b LogNormalBetween\cf0\b0  Function \par
+Returns the Probability of (\b AVal\b0  < X < \b BVal\b0 ) for a LogNormal Distribution with given Mean and Standard Deviation.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b LogNormalBetween\b0 (const\b  Mean, StdDev, AVal, BVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Standard Deviation must be > 0 or function will result in an EMathError.\par
+\par
+Accuracy: Uses a Power series trying to get 18 digit accuracy or Maximum Iterations (100).\par
+\par
+\cf3\b Parameters\b0  \cf0\par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev\b0   Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b AVal\b0   Lower Value at which to evaluate. \par
+\b BVal\b0   Upper Value at which to evaluate. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b LogNormalGreater\cf0\b0  Function \par
+Returns the Probability of (X > \b AVal\b0 ) for a LogNormal Distribution with given Mean and Standard Deviation.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b LogNormalGreater\b0 (const \b Mean, StdDev, AVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Standard Deviation must be > 0 or function will result in an EMathError.\par
+\par
+Accuracy: Uses a Power series trying to get 18 digit accuracy or Maximum Iterations (100).\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev\b0   Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b AVal\b0   Value at which to evaluate. \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b LogNormalLess\cf0\b0  Function \par
+Returns the Probability of (X < \b AVal\b0 ) for a LogNormal Distribution with given Mean and Standard Deviation.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b LogNormalLess\b0 (const \b Mean, StdDev, AVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Standard Deviation must be > 0 or function will result in an EMathError.\par
+\par
+Accuracy: Uses a Power series trying to get 18 digit accuracy or Maximum Iterations (100).\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev\b0   Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b AVal\b0   Value at which to evaluate. \par
+\cf1 =====================================================\par
+\par
+\cf2\b LogNormalPDF\cf0\b0  Function \par
+Returns the value of the LogNormal Probability Distribution Function at given value \b X\b0 , for given \b Mean \b0 and \b Standard Deviation\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  LogNormalPDF\b0 (const \b X, Mean, StdDev\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Full Accuracy of FPU. This is the function that defines the LogNormal Distribution Curve.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b X\b0   Value to process. \par
+\b Mean\b0   Mean of the LogNormal Distribution \par
+\b StdDev\b0   Standard Deviation of the LogNormal Distribution \par
+\cf1 =====================================================\par
+\cf0\par
+\cf2\b\f0 NormalDistBetween\cf0\b0  Function \par
+Returns the Probability of (\b AVal \b0 < X <\b  BVal\b0 ) for a Normal Distribution with given \b Mean\b0  and \b Standard Deviation\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b NormalDistBetween\b0 (const\b  Mean, StdDev, AVal, BVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+\b Standard Deviation\b0  must be > 0 or function will result in an EMathError.\par
+\par
+Accuracy: Uses a Power series trying to get 18 digit accuracy or Maximum Iterations (100).\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev \b0  Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b AVal\b0   Lower Value at which to evaluate. \par
+\b BVal\b0   Upper Value at which to evaluate. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 NormalDistGreater\cf0\b0  Function \par
+Returns the Probability of (X > \b AVal\b0 ) for a Normal Distribution with given \b Mean\b0  and \b Standard Deviation\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  NormalDistGreater\b0 (const \b Mean, StdDev, AVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+\b Standard Deviation\b0  must be > 0 or function will result in an EMathError.\par
+\par
+Accuracy: Uses a Power series trying to get 18 digit accuracy or Maximum Iterations (100).\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev\b0   Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b AVal \b0  Value at which to evaluate. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 NormalDistLess\cf0\b0  Function \par
+Returns the Probability of (X <\b  AVal\b0 ) for a Normal Distribution with given \b Mean\b0  and \b Standard Deviation\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b NormalDistLess\b0 (const \b Mean, StdDev, AVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+\b Standard Deviation\b0  must be > 0 or function will result in an EMathError.\par
+\par
+Accuracy: Uses a Power series trying to get 18 digit accuracy or Maximum Iterations (100).\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b Mean\b0   Arithmetic Mean of the Distribution. \par
+\b StdDev\b0   Standard Deviation of the Distribution. If you have Variance then use its Positive Square Root. \par
+\b AVal\b0   Value at which to evaluate. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 NormalGreater\cf0\b0  Function \par
+Returns Q(X) for the Standard Normal Distribution as defined by Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b NormalGreater\b0 (const \b X\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+This is the Probability that a value is greater than \b X\b0 , ie Area under the curve defined by NormalZ to the Right of \b X\par
+\b0\par
+Only handles values \b X\b0  >= 0 otherwise exception raised.\par
+\par
+Accuracy: Uses a Power series trying to get 18 digit accuracy or Maximum Iterations (100).\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b X\b0   Value to process. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 NormalLess\cf0\b0  Function \par
+Returns P(X) for the Standard Normal Distribution as defined by Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b NormalLess\b0 (const \b X\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+This is the Probability that a value is less than \b X\b0 , ie Area under the curve defined by NormalZ to the left of \b X\b0 .\par
+\par
+Only handles values \b X\b0  >= 0 otherwise exception raised.\par
+\par
+Accuracy: Uses a Power series trying to get 18 digit accuracy or Maximum Iterations (100).\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b X\b0   Value to process. \par
+\cf1\f1 =====================================================\par
+\cf0\par
+\cf2\b\f0 NormalPDF\cf0\b0  Function \par
+Returns the value of the Normal Probability Distribution Function at given value \b X\b0 , for given\b  Mean \b0 and \b Standard Deviation\b0 .\par
+\par
+\cf3\b Declaration\par
+\cf0\b0 Function \b NormalPDF\b0 (const \b X, Mean, StdDev\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Full Accuracy of FPU. This is the function that defines the Normal Distribution Curve.\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b X\b0   Value to process. \par
+\b Mean\b0   Mean of the Normal Distribution. \par
+\b StdDev\b0   Standard Deviation of the Normal Distribution. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2\b NormalZ\cf0\b0  Function \par
+Returns Z(X) for the Standard Normal Distribution as defined by Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b NormalZ\b0 (const \b X\b0 : Extended): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+This is the function that defines the Standard Normal Distribution Curve. Full Accuracy of FPU.\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b X \b0  Value to process. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2 Permutation\cf0  Function \par
+Returns the Permutation of \b N\b0  by \b R\b0 , often written nPr, as an Extended Float, thus allowing for large values.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b Permutation\b0 (const \b N, R\b0 : LongWord): Extended;\par
+\par
+\cf3\b Description\cf0\b0\par
+Permutation of \b N\b0  by \b R\b0  is the number of ways you can arrange \b R\b0  objects from \b N\b0  objects, when order is important.\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b N\b0   Total Number of Items. \par
+\b R\b0   Number of Chosen Items. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2\b PoissonBetween\cf0\b0  Function \par
+Returns the Result for Pr (\b A \b0 < X <\b  B) \b0 for a Poisson Distribution with given Mean.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b PoissonBetween\b0 (const \b Mu\b0 : Extended; const \b A, B\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Mu\b0   Mean of the Distribution, must be Positive. \par
+\b A\b0   Lower Value at which to evaluate. \par
+\b B\b0   Upper Value at which to evaluate. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2\b PoissonEq \cf0\b0 Function \par
+Returns the Result for Pr (X = \b A\b0 ) for a Poisson Distribution with given Mean.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b PoissonEq\b0 (const \b Mu\b0 : Extended; const \b A\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b Mu \b0  Mean of the Distribution, must be Positive. \par
+\b A\b0   Value at which to evaluate. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2\b PoissonGreater\cf0\b0  Function \par
+Returns the Result for Pr (X > \b A\b0 ) for a Poisson Distribution with given Mean.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b PoissonGreater\b0 (const \b Mu\b0 : Extended; const \b A\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b Mu \b0  Mean of the Distribution, must be Positive. \par
+\b A\b0   Value at which to evaluate. \par
+\cf1\f1 =====================================================\par
+\par
+\cf2\b\f0 PoissonLess\cf0\b0  Function \par
+Returns the Result for Pr (X < \b A\b0 ) for a Poisson Distribution with given Mean.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  PoissonLess\b0 (const \b Mu\b0 : Extended; const \b A\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b Mu\b0   Mean of the Distribution, must be Positive. \par
+\b A\b0   Value at which to evaluate. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2\b StudentTBetween\cf0\b0  Function \par
+Calculates the Pr (\b TA\b0  < X < \b TB\b0 ) with given Degrees of Freedom (\b DF\b0 ) for a Student T Distribution, using a Incomplete Beta Function as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  StudentTBetween\b0 (const \b TA, TB\b0 : Extended; const\b  DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b TA\b0   Lower Value at which to Evaluate, must be Non-Negative. \par
+\b TB \b0  Upper Value at which to Evaluate, must be Non-Negative. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2\b StudentTGreater\cf0\b0  Function \par
+Calculates the Pr (X > \b T\b0 ) with given Degrees of Freedom (\b DF\b0 ) for a Student T Distribution, using a Incomplete Beta Function as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b StudentTGreater\b0 (const \b T\b0 : Extended; const \b DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters \cf0\b0\par
+\b T\b0   Value at which to Evaluate, must be Non-Negative. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2\b StudentTLess\cf0\b0  Function \par
+Calculates the Pr (X < \b T\b0 ) with given Degrees of Freedom (\b DF\b0 ) for a Student T Distribution, using a Incomplete Beta Function as defined in Abramowitz & Stegun.\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function \b StudentTLess\b0 (const \b T\b0 : Extended; const \b DF\b0 : LongWord): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b T \b0  Value at which to Evaluate, must be Non-Negative. \par
+\b DF\b0   Degrees of Freedom, must be Positive. \par
+\cf1\f1 =====================================================\par
+\cf0\f0\par
+\cf2\b ZAlpha\cf0\b0  Function \par
+Returns the Standardised Normal Value (Z) that results in a Tail Area of given \b AVal\b0 .\par
+\par
+\cf3\b Declaration\cf0\b0\par
+Function\b  ZAlpha\b0 (const \b AVal\b0 : Extended): Extended;\par
+\par
+\cf3\b Parameters\cf0\b0  \par
+\b AVal\b0   Value at which to evaluate \par
+\par
+\par
+\cf1\fs40 Date and Time Routines Category\b  \par
+\b0\f1\fs20 =====================================================\par
+\cf0\f0\par
+\pard\sb100\sa100\cf2\lang1033\b CompareDate\cf0\b0  Routine Indicates the relationship between the date portions of two TDateTime values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b CompareDate\b0 (const A: TDateTime, const B: TDateTime): TValueRelationship; \par
+\cf3\b Description\cf0\par
+\b0 Call CompareDate to compare the two TDateTime values specified by A and B. CompareDate returns LessThanValue if A occurs on a day prior to the day specified by B. EqualsValue if A occurs on the same day as B, ignoring the time of day. GreaterThanValue if A occurs on a day that follows the day specified by B.\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b CompareDateTime\cf0\b0  Routine Indicates the relationship between two TDateTime values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b CompareDateTime\b0 (const A: TDateTime, const B: TDateTime): TValueRelationship; \par
+\cf3\b Description\par
+\cf0\b0 Call CompareDateTime to compare the two TDateTime values specified by A and B. CompareDateTime returns LessThanValue if A is earlier than B. EqualsValue if A is the same as B. GreaterThanValue if A is later than B. \par
+Note: Note:CompareDateTime differs from a direct comparison of the corresponding double precision values in that two TDateTime values are considered the same if they have the same value down to the millisecond. It is possible to create two TDateTime values that differ numerically when viewed as doubles, but which represent the same year, month, day, hour, minute, second, and millisecond. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b CompareTime\cf0\b0  Routine Indicates the relationship between the time portions of two TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b CompareTime\b0 (const A: TDateTime, const B: TDateTime): TValueRelationship; \par
+\cf3\b Description\cf0\par
+\b0 Call CompareTime to compare the two TDateTime values specified by A and B. CompareTime returns LessThanValue if A occurs earlier in the day than B (even if A occurs on a later day than B). EqualsValue if A occurs at the same time of day as B, ignoring of the date portion of the two values. GreaterThanValue if A occurs later in the day than B (even if A occurs on an earlier day than B).\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DateOf\cf0\b0  Routine Strips the time portion from a TDateTime value. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DateOf\b0 (const AValue: TDateTime): TDateTime; \par
+\cf3\b Description\b0  \cf0\par
+Call DateOf to convert a TDateTime value to a TDateTime value that includes only the date information (sets the time portion to 0, which means midnight).\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DayOf\cf0\b0  Routine Returns the day of the month represented by a TDateTime value. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b DayOf\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call DayOf to obtain the day of the month represented by a specified TDateTime value. DayOf returns a value between 1 and 31. \par
+Note: Note:DayOf returns the same value as the DayOfTheMonth function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DayOfTheMonth\cf0\b0  Routine Returns the day of the month represented by a TDateTime value. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b DayOfTheMonth\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call DayOfTheMonth to obtain the day of the month represented by a specified TDateTime value. DayOfTheMonth returns a value between 1 and 31. \par
+Note: Note:DayOfTheMonth returns the same value as the DayOf function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DayOfTheWeek\cf0\b0  Routine Returns the day of the week represented by a TDateTime value. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b DayOfTheWeek\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call DayOfTheWeek to obtain the day of the week represented by a specified TDateTime value. DayOfTheWeek returns a value between 1 and 7, where 1 indicates Monday and 7 indicates Sunday. \par
+Note: Note:DayOfTheWeek is ISO 8601 compliant (where Monday is considered the first day of the week). To obtain the day of the week where Sunday is considered the first day of the week, use the DayOfWeek function instead. \par
+Note: Tip:To make the return value more readable, use the Day of week constants. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DayOfTheYear\cf0\b0  Routine Returns the number of days between a specified TDateTime value and December 31 of the previous year. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DayOfTheYear\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call DayOfTheYear to obtain the ordinal position of a TDateTime value\rquote s day within its year. Thus, a TDateTime value that refers to January 1 generates a result of 1, dates on January 2 return 2, dates on February 1 return 32, and so on.\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DaysBetween\cf0\b0  Routine Returns the number of whole days between two specified TDateTime values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DaysBetween\b0 (const ANow: TDateTime, const AThen: TDateTime): Integer; \par
+\cf3\b Description\cf0\b0  \par
+Call DaysBetween to obtain the difference, in days, between two TDateTime values. DaysBetween counts only whole days. Thus, DaysBetween reports the difference between Dec 31, 1999 11:59 PM and Jan 1, 2000 11:58 PM as 0 because the difference is one minute short of an entire day. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DaysInAMonth\cf0\b0  Routine Returns the number of days in a specified month of a specified year. \b Namespace\b0  Borland.Vcl.DateUtils \par
+\cf3\b Syntax\b0  \cf0\par
+function \b DaysInAMonth\b0 (const AYear: Word, const AMonth: Word): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call DaysInAMonth to obtain the number of days in the specified month of the specified year. AYear is a year between 1 and 9999 (inclusive). AMonth is a month between 1 and 12 (inclusive). \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DaysInMonth\cf0\b0  Routine Returns the number of days in the month of a specified TDateTime value. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DaysInMonth\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call DaysInMonth to obtain the number of days in the month of the TDateTime value specified by AValue. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DaysInAYear\cf0\b0  Routine Returns the number of days in a specified year. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DaysInAYear\b0 (const AYear: Word): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call DaysInAYear to obtain the number of days in the year specified by AYear. AYear is a year between 1 and 9999 (inclusive).\par
+\pard\cf1\lang1049 =====================================================\par
+\par
+\pard\sb100\sa100\cf2\lang1033\b DaysInYear\cf0\b0  Routine Returns the number of days in the year of a specified TDateTime value. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DaysInYear\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call DaysInYear to obtain the number of days in the year of the TDateTime value specified by AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b DaySpan\cf0\b0  Routine Returns the number of days (including fractional days) between two specified TDateTime values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b DaySpan\b0 (const ANow: TDateTime, const AThen: TDateTime): Double; \par
+\cf3\b Description\cf0\par
+\b0  Call DaySpan to obtain the difference, in days, between two TDateTime values. Unlike the DaysBetween function, which only counts whole days, DaySpan reports incomplete days as a fraction of an entire day. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b HourOfTheDay\cf0\b0  Routine Returns the hour of the day represented by a TDateTime value. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b HourOfTheDay\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call HourOfTheDay to obtain the hour of the day represented by a specified TDateTime value. HourOf returns a value between 0 and 23. \par
+Note: Note:HourOfTheDay returns the same value as the HourOf function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b HourOfTheMonth\cf0\b0  Routine Returns the number of hours between a specified TDateTime value and 12:00 AM of the first day of the month. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b HourOfTheMonth\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call HourOfTheMonth to obtain the number of complete hours between AValue and 12:00 AM on the first day of the month that includes AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b HourOfTheWeek\cf0\b0  Routine Returns the number of hours between a specified TDateTime value and 12:00 AM of the first day of the week.\par
+\cf3\b Syntax\b0  \cf0\par
+function \b HourOfTheWeek\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call HourOfTheWeek to obtain the number of complete hours between AValue and 12:00 AM on Monday of the week that includes AValue. \par
+Note: Note:HourOfTheWeek defines the week of AValue according to the ISO 8601 standard. That is, the week starts on Monday and ends on Sunday. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b HourOfTheYear\cf0\b0  Routine Returns the number of hours between a specified TDateTime value and 12:00 AM of the first day of the year. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b HourOfTheYear\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call HourOfTheYear to obtain the number of complete hours between AValue and 12:00 AM on Jan 1 of the year that includes AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b HoursBetween\cf0\b0  Routine Returns the number of whole hours between two specified TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b HoursBetween\b0 (const ANow: TDateTime, const AThen: TDateTime): Int64; \par
+\cf3\b Description\cf0\b0  \par
+Call HoursBetween to obtain the difference, in hours, between two TDateTime values. HoursBetween counts only entire hours. Thus, HoursBetween reports the difference between 9:00 AM and 9:59:59 AM as 0 because the difference is one second short of an entire hour. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b HourSpan\cf0\b0  Routine Returns the number of Hours (including fractional Hours) between two specified TDateTime values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b HourSpan\b0 (const ANow: TDateTime, const AThen: TDateTime): Double; \par
+\cf3\b Description\b0  \cf0\par
+Call HourSpan to obtain the difference, in hours, between two TDateTime values. Unlike the HoursBetween function, which only counts entire hours, HourSpan reports incomplete hours as a fraction of an entire hour.\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IncDay \cf0\b0 Routine Returns a date shifted by a specified number of days. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b IncDay\b0 (const AValue: TDateTime, const ANumberOfDays: Integer): TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+IncDay returns the value of the AValue parameter, incremented by ANumberOfDays days. ANumberOfDays can be negative, to return a date N days previous. The time of day specified by the AValue parameter is copied to the result. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IncHour\cf0\b0  Routine Returns a date/time value shifted by a specified number of hours.\par
+\cf3\b Syntax\b0  \cf0\par
+function \b IncHour\b0 (const AValue: TDateTime, const ANumberOfHours: Int64): TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+IncHour returns the value of the AValue parameter, incremented by ANumberOfHours hours. ANumberOfHours can be negative, to return a date and time N hours prior to AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IncMilliSecond\cf0\b0  Routine Returns a date/time value shifted by a specified number of milliseconds. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b IncMilliSecond\b0 (const AValue: TDateTime, const ANumberOfMilliSeconds: Int64): TDateTime; \par
+\cf3\b Description\b0  \cf0\par
+IncMilliSecond returns the value of the AValue parameter, incremented by ANumberOfMilliSeconds milliseconds. ANumberOfMilliSeconds can be negative, to return a date and time N milliseconds prior to AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IncMinute\cf0\b0  Routine Returns a date/time value shifted by a specified number of minutes. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b IncMinute\b0 (const AValue: TDateTime, const ANumberOfMinutes: Int64): TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+IncMinute returns the value of the AValue parameter, incremented by ANumberOfMinutes minutes. ANumberOfMinutes can be negative, to return a date and time N minutes prior to AValue.\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IncSecond\cf0\b0  Routine Returns a date/time value shifted by a specified number of seconds. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b IncSecond\b0 (const AValue: TDateTime, const ANumberOfSeconds: Int64): TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+IncSecond returns the value of the AValue parameter, incremented by ANumberOfSeconds seconds. ANumberOfSeconds can be negative, to return a date and time N seconds prior to AValue\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IncWeek\cf0\b0  Routine Returns a date shifted by a specified number of weeks.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b IncWeek\b0 (const AValue: TDateTime, const ANumberOfWeeks: Integer): TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+IncWeek returns the value of the AValue parameter, incremented by ANumberOfWeeks weeks. ANumberOfWeeks can be negative, to return a date N weeks previous. The time of day specified by the AValue parameter is copied to the result.\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IncYear\cf0\b0  Routine Returns a date shifted by a specified number of years.\par
+\cf3\b Syntax\b0  \cf0\par
+function \b IncYear\b0 (const AValue: TDateTime, const ANumberOfYears: Integer): TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+IncYear returns the value of the AValue parameter, incremented by ANumberOfYears years. ANumberOfYears can be negative, to return a date N years previous. The time of day specified by the AValue parameter is copied to the result.\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IsInLeapYear\cf0\b0  Routine Indicates whether a specified TDateTime value occurs in a leap year.\par
+\cf3\b Syntax\b0  \cf0\par
+function \b IsInLeapYear\b0 (const AValue: TDateTime): Boolean; \par
+\cf3\b Description\cf0\b0  \par
+Call IsInLeapYear to determine whether the year of the date specified by AValue occurs in a leap year. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IsPM\cf0\b0  Routine Indicates whether the time portion of a specified TDateTime value occurs after noon. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b IsPM\b0 (const AValue: TDateTime): Boolean; \par
+\cf3\b Description\cf0\b0  \par
+IsPM returns true if the time portion of AValue occurs on or after 12:00 noon and before 12:00 midnight. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b IsSameDay\cf0\b0  Routine Indicates whether a specified TDateTime value occurs on a the same day as a criterion date. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b IsSameDay\b0 (const AValue: TDateTime, const ABasis: TDateTime): Boolean; \par
+\cf3\b Description\cf0\b0  \par
+IsSameDay returns true if AValue occurs on the same day as ABasis. The time portions of AValue and ABasis can differ. IsSameDay returns false if the date portions of AValue and ABasis differ. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondOfTheDay\cf0\b0  Routine Returns the number of milliseconds between a specified TDateTime value and the beginning of the same day. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MilliSecondOfTheDay\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\cf0\b0  \par
+Call MilliSecondOfTheDay to obtain the number of milliseconds between AValue and the beginning (midnight) on the same day. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondOfTheHour\cf0\b0  Routine Returns the number of milliseconds between a specified TDateTime value and the beginning of the same hour. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b MilliSecondOfTheHour\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\b0  \cf0\par
+Call MilliSecondOfTheHour to obtain the number of milliseconds between AValue and the start of the same hour on the same day. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondOfTheMinute\cf0\b0  Routine Returns the number of milliseconds between a specified TDateTime value and the beginning of the same minute. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MilliSecondOfTheMinute\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\cf0\b0  \par
+Call MilliSecondOfTheMinute to obtain the number of milliseconds between AValue and the start of the same minute on the same day. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondOfTheMonth\cf0\b0  Routine Returns the number of milliseconds between a specified TDateTime value and the beginning of the month. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b MilliSecondOfTheMonth\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\b0  \cf0\par
+Call MilliSecondOfTheMonth to obtain the number of milliseconds between the beginning (Midnight on the first day) of the month that contains AValue and AValue itself. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondOfTheSecond\cf0\b0  Routine Returns the millisecond of the second represented by a TDateTime value. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b MilliSecondOfTheSecond\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call MilliSecondOfTheSecond to obtain the millisecond of the second represented by a specified TDateTime value. MilliSecondOfTheSecond returns a value between 0 and 999. \par
+Note: Note:MilliSecondOfTheSecond returns the same value as the MilliSecondOf function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondOfTheWeek\cf0\b0  Routine Returns the number of milliseconds between a specified TDateTime value and 12:00:00:00 AM of the first day of the week. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MilliSecondOfTheWeek\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\b0  \cf0\par
+Call MilliSecondOfTheWeek to obtain the number of milliseconds between AValue and 12:00:00:00 AM on Monday of the week that includes AValue. \par
+Note: Note:MilliSecondOfTheWeek defines the week of AValue according to the ISO 8601 standard. That is, the week starts on Monday and ends on Sunday. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondOfTheYear\cf0\b0  Routine Returns the number of milliseconds between a specified TDateTime value and 12:00:00:00 AM of the first day of the year. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MilliSecondOfTheYear\b0 (const AValue: TDateTime): Int64; \par
+\cf3\b Description\par
+\cf0\b0 Call MilliSecondOfTheYear to obtain the number of milliseconds between AValue and 12:00:00:00 AM on Jan 1 of the year that includes AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondsBetween\cf0\b0  Routine Returns the number of milliseconds between two specified TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MilliSecondsBetween\b0 (const ANow: TDateTime, const AThen: TDateTime): Int64; \par
+\cf3\b Description\cf0\b0  \par
+Call MilliSecondsBetween to obtain the difference, in milliseconds, between two TDateTime values. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MilliSecondSpan\cf0\b0  Routine Returns the number of milliseconds between two specified TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MilliSecondSpan\b0 (const ANow: TDateTime, const AThen: TDateTime): Double; \par
+\cf3\b Description\b0  \cf0\par
+Call MilliSecondSpan to obtain the difference, in milliseconds, between two TDateTime values. MilliSecondSpan returns the same value as MilliSecondsBetween, but as a floating point type instead of an integer. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MinuteOfTheDay\cf0\b0  Routine Returns the number of minutes between a specified TDateTime value and 12:00 AM of the same day.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b MinuteOfTheDay\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call MinuteOfTheDay to obtain the number of minutes between AValue and 12:00 AM on the same day. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MinuteOfTheHour\cf0\b0  Routine Returns the number of minutes between a specified TDateTime value and the beginning of the same hour. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MinuteOfTheHour\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call MinuteOfTheHour to obtain the number of minutes between AValue and the start of the same hour on the same day. \par
+Note: Note:MinuteOfTheHour returns the same value as the MinuteOf function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MinuteOfTheMonth\cf0\b0  Routine Returns the number of minutes between a specified TDateTime value and 12:00 AM of the first day of the month. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b MinuteOfTheMonth\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call MinuteOfTheMonth to obtain the number of minutes between AValue and 12:00 AM on the first day of the month that includes AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MinuteOfTheWeek\cf0\b0  Routine Returns the number of minutes between a specified TDateTime value and 12:00 AM of the first day of the week. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MinuteOfTheWeek\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call MinuteOfTheWeek to obtain the number of minutes between AValue and 12:00 AM on Monday of the week that includes AValue. \par
+Note: Note:MinuteOfTheWeek defines the week of AValue according to the ISO 8601 standard. That is, the week starts on Monday and ends on Sunday. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MinuteOfTheYear\cf0\b0  Routine Returns the number of minutes between a specified TDateTime value and 12:00 AM of the first day of the year. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b MinuteOfTheYear\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\cf0\b0  \par
+Call MinuteOfTheYear to obtain the number of minutes between AValue and 12:00 AM on Jan 1 of the year that includes AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MinutesBetween \cf0\b0 Routine Returns the number of minutes between two specified TDateTime values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b MinutesBetween\b0 (const ANow: TDateTime, const AThen: TDateTime): Int64; \par
+\cf3\b Description\b0  \cf0\par
+Call MinutesBetween to obtain the difference, in minutes, between two TDateTime values. MinutesBetween counts only entire minutes. Thus, MinutesBetween reports the difference between 9:00:00 AM and 9:00:59:999 AM as 0 because the difference is one millisecond short of an entire minute. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MinuteSpan\cf0\b0  Routine Returns the number of minutes, including fractions thereof, between two specified TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MinuteSpan\b0 (const ANow: TDateTime, const AThen: TDateTime): Double; \par
+\cf3\b Description\cf0\b0  \par
+Call MinuteSpan to obtain the difference, in minutes, between two TDateTime values. Unlike the MinutesBetween function, which only counts entire minutes, MinuteSpan reports incomplete minutes as a fraction of an entire minute. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MonthOfTheYear\cf0\b0  Routine Returns the month of the year represented by a TDateTime value. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b MonthOfTheYear\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\b0  \cf0\par
+Call MonthOfTheYear to obtain the month of the year represented by a specified TDateTime value. MonthOfTheYear returns a value between 1 and 12. \par
+Note: Note:MonthOfTheYear returns the same value as the MonthOf function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MonthsBetween\cf0\b0  Routine Returns the approximate number of months between two specified TDateTime values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b MonthsBetween\b0 (const ANow: TDateTime, const AThen: TDateTime): Integer; \par
+\cf3\b Description\cf0\b0  \par
+Call MonthsBetween to obtain the difference, in months, between two TDateTime values. Because months are not all the same length, MonthsBetween returns an approximation based on an assumption of 30.4375 days per month. Fractional months are not counted. Thus, for example, MonthsBetween reports the difference between Feb 1 and Mar 1 as 0. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b MonthSpan\cf0\b0  Routine Returns the approximate number of months, including fractions, between two specified TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b MonthSpan\b0 (const ANow: TDateTime, const AThen: TDateTime): Double; \par
+\cf3\b Description\cf0\b0  \par
+Call MonthSpan to obtain the difference, in months, between two TDateTime values. Because months are not all the same length, MonthsBetween returns an approximation based on an assumption of 30.4375 days per month. Unlike the MonthsBetween function, which does not report fractional \ldblquote months\rdblquote , MonthSpan reports incomplete months as a fraction of an entire month. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b Now\cf0\b0  Routine Returns the current date and time. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b Now\b0 : TDateTime; \par
+\cf3\b Description\cf0\par
+\b0  Returns the current date and time, corresponding to the sum of the value returned by the global Date and Time functions. \par
+Note: Note:Although TDateTime values can represent milliseconds, Now is accurate only to the nearest second. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b NthDayOfWeek\cf0\b0  Routine Returns which occurrence of its weekday a specified TDateTime value represents. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b NthDayOfWeek\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+NthDayOfWeek indicates which occurrence of a weekday within a month the date and time specified by AValue represents. For example, if AValue represents the 2nd Tuesday of the month, NthDayOfWeek returns 2. Note that this value may differ from the value that the WeekOfTheMonth function returns, because NthDayOfWeek counts every occurrence of the given weekday, while WeekOfTheMonth only counts a week if it includes 4 or more days in the month. Thus, for example, if AValue represents a Saturday that is the first day of a month, NthDayOfWeek returns 1, while WeekOfTheMonth returns 5 (or maybe 4), indicating the last week of the previous month. \par
+Note: Note:To obtain the year, month, and day of the week, as well as which occurrence of that day of the week the specified TDateTime represents, use the DecodeDayOfWeekInMonth function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SameDate\cf0\b0  Routine Indicates whether two TDateTime values represent the same year, month, and day. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SameDate\b0 (const A: TDateTime, const B: TDateTime): Boolean; \par
+\cf3\b Description\cf0\b0  \par
+Call SameDate to determine whether the two TDateTime values specified by A and B represent the same date, ignoring the time portion. SameDate returns true if the two specified values occur on the same day, false otherwise. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SameDateTime\cf0\b0  Routine Indicates whether two TDateTime values represent the same year, month, day, hour, minute, second, and millisecond. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SameDateTime\b0 (const A: TDateTime, const B: TDateTime): Boolean; \par
+\cf3\b Description\b0  \par
+\cf0 Call SameDateTime to determine whether the two TDateTime values specified by A and B represent the same time, down to the millisecond. SameDateTime returns true if the two specified values represent the same time, false otherwise. \par
+Note: Note:It is possible to create two TDateTime values that differ numerically when viewed as floating point types, but which represent the same year, month, day, hour, minute, second, and millisecond. SameDateTime allows applications to determine when two TDateTime values are the same even when their numeric values differ. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SameTime Routine \cf0\b0 Indicates whether two TDateTime values represent the same time of day, ignoring the date portion. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b SameTime\b0 (const A: TDateTime, const B: TDateTime): Boolean; \par
+\cf3\b Description\cf0\b0  \par
+Call SameTime to determine whether the two TDateTime values specified by A and B represent the same time of day, ignoring the date portion. SameTime returns true if the two specified values occur on the same hour, minute, second, and millisecond, false otherwise. \par
+Note: Note:It is possible to create two TDateTime values whose time portions differ numerically when viewed as floating point types, but which represent the same hour, minute, second, and millisecond. SameTime allows applications to determine when two TDateTime values represent the same time, even when the fractional parts of the values differ. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SecondOfTheDay\cf0\b0  Routine Returns the number of seconds between a specified TDateTime value and 12:00:00 AM of the same day. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SecondOfTheDay\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\cf0\b0  \par
+Call SecondOfTheDay to obtain the number of seconds between AValue and 12:00:00 AM on the same day. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SecondOfTheHour\cf0\b0  Routine Returns the number of seconds between a specified TDateTime value and the beginning of the same hour. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b SecondOfTheHour\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call SecondOfTheHour to obtain the number of seconds between AValue and the start of the same hour on the same day.\par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SecondOfTheMinute \cf0\b0 Routine Returns the number of seconds between a specified TDateTime value and the beginning of the same minute. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b SecondOfTheMinute\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call SecondOfTheMinute to obtain the number of seconds between AValue and the start of the same minute on the same day. \par
+Note: Note:SecondOfTheMinute returns the same value as the SecondOf function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SecondOfTheMonth\cf0\b0  Routine Returns the number of seconds between a specified TDateTime value and 12:00:00 AM on the first day of the month. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b SecondOfTheMonth\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\cf0\b0  \par
+Call SecondOfTheMonth to obtain the number of seconds between AValue and 12:00:00 AM on the first day of the month that includes AValue. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SecondOfTheWeek\cf0\b0  Routine Returns the number of seconds between a specified TDateTime value and 12:00:00 AM of the first day of the week. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b SecondOfTheWeek\b0 (const AValue: TDateTime): Cardinal; \par
+\cf3\b Description\b0  \par
+\cf0 Call SecondOfTheWeek to obtain the number of seconds between AValue and 12:00:00 AM on Monday of the week that includes AValue. \par
+Note: Note:SecondOfTheWeek defines the week of AValue according to the ISO 8601 standard. That is, the week starts on Monday and ends on Sunday. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b StartOfAYear\cf0\b0  Routine Returns a TDateTime that represents the first moment on the first day of a specified year. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b StartOfAYear\b0 (const AYear: Word): TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+StartOfAYear returns the first expressible moment (January 1 at 12:00:00.000 AM) of the year specified by the AYear parameter. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SecondsBetween \cf0\b0 Routine Returns the number of seconds between two specified TDateTime values.\par
+\cf3\b Syntax\b0  \cf0\par
+function \b SecondsBetween\b0 (const ANow: TDateTime, const AThen: TDateTime): Int64; \par
+\cf3\b Description\cf0\b0  \par
+Call SecondsBetween to obtain the difference, in seconds, between two TDateTime values. SecondsBetween counts only entire seconds. Thus, SecondsBetween reports the difference between 9:00:00 AM and 9:00:00:999 AM as 0 because the difference is one millisecond short of an entire second. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b SecondSpan\cf0\b0  Routine Returns the number of seconds (including fractions thereof) between two specified TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b SecondSpan\b0 (const ANow: TDateTime, const AThen: TDateTime): Double; \par
+\cf3\b Description\cf0\b0  \par
+Call SecondSpan to obtain the difference, in seconds, between two TDateTime values. Unlike the SecondsBetween function, which only counts entire seconds, SecondSpan reports incomplete seconds as a fraction of an entire second. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b TimeOf \cf0\b0 Routine\cf0  Strips the date portion from a TDateTime value. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b TimeOf\b0 (const AValue: TDateTime): TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+Call TimeOf to convert a TDateTime value to a TDateTime value that includes only the time information (sets the date portion to 0, which means 12/30/1899). \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b Today\cf0\b0  Routine Returns a TDateTime value that represents the current date. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b Today\b0 : TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+Today returns a TDateTime value with the date portion set to the current date and the time portion set to 0. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b Tomorrow\cf0\b0  Routine Returns a TDateTime value that represents the following day. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b Tomorrow\b0 : TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+Tomorrow returns a TDateTime value with the date portion set to the day following the current date and the time portion set to 0. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b WeekOfTheMonth\cf0\b0  Routine Returns the week of the month represented by a TDateTime value.\par
+\cf3\b Syntax\b0  \cf0\par
+function \b WeekOfTheMonth\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call WeekOfTheMonth to obtain the week of the month represented by a specified TDateTime value. WeekOfTheMonth returns a value between 1 and 6. AYear and AMonth return the year and month in which WeekOfTheMonth occurs. Note that these values may not be the same as the year and month of AValue. This is because the first week of a month is defined as the first week with four or more days in that month. Thus, if the first day of the month is a Friday, Saturday, or Sunday, the first one, two, or three days of the month are defined as belonging to the last week of the previous month. Similarly, if the last day of the month is a Monday, Tuesday, or Wednesday, then the last one, two, or three days of the month are defined as belonging to the first week of the next month. \par
+Note: Tip:To count weeks based on the weekday of the date/time value, use the NthDayOfWeek function instead. For example, if AValue represents a Saturday that is the first day of a month, WeekOfTheMonth returns 5 (or maybe 4), indicating the last week of the previous month, while NthDayOfWeek returns 1 AValue is the first Saturday in the month. \par
+Note: Note:WeekOfTheMonth uses the ISO 8601 standard definition of a week. That is, a week is considered to start on a Monday and end on a Sunday. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b WeekOfTheYear\cf0\b0  Routine Returns the week of the year represented by a TDateTime value. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b WeekOfTheYear\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call WeekOfTheYear to obtain the week of the year represented by a specified TDateTime value. WeekOfTheYear returns a value between 1 and 53. AYear returns the year in which the specified week occurs. Note that this may not be the same as the year of AValue. This is because the first week of a year is defined as the first week with four or more days in that year. This means that if the first calendar day of the year is a Friday, Saturday, or Sunday, then for the first three, two, or one days of the calendar year, WeekOfTheYear returns the last week of the previous year. Similarly, if the last calendar day of the year is a Monday, Tuesday, or Wednesday, then for the last one, two, or three days of the calendar year, WeekOfTheYear returns 1 (the first week of the next calendar year). \par
+Note: Note:WeekOfTheYear uses the ISO 8601 standard definition of a week. That is, a week is considered to start on a Monday and end on a Sunday. \par
+Note: Note:WeekOfTheYear returns the same value as the WeekOf function. \par
+\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b WeeksBetween\cf0\b0  Routine Returns the number of whole weeks between two specified TDateTime values. \par
+\cf3\b Syntax\cf0\b0  \par
+function \b WeeksBetween\b0 (const ANow: TDateTime, const AThen: TDateTime): Integer; \par
+\cf3\b Description\b0  \par
+\cf0 Call WeeksBetween to obtain the difference, in weeks, between two TDateTime values. WeeksBetween counts only whole Weeks. Thus, WeeksBetween reports the difference between January 1 at 12:00 AM and Jan 6 at 11:58 PM as 0 because the difference is one minute short of an entire week. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b WeekSpan\cf0\b0  Routine Returns the number of weeks (including fractional weeks) between two specified TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b WeekSpan\b0 (const ANow: TDateTime, const AThen: TDateTime): Double; \par
+\cf3\b Description\cf0\b0  \par
+Call WeekSpan to obtain the difference, in weeks, between two TDateTime values. Unlike the WeeksBetween function, which only counts whole weeks, WeekSpan reports incomplete weeks as a fraction of an entire week. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b YearOf Routine\cf0\b0  Returns the year represented by a TDateTime value. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b YearOf\b0 (const AValue: TDateTime): Word; \par
+\cf3\b Description\cf0\b0  \par
+Call YearOf to obtain the year represented by a specified TDateTime value. YearOf returns a value between 1 and 9999. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b YearsBetween\cf0\b0  Routine Returns the approximate number of years between two specified TDateTime values. \par
+\cf3\b Syntax\b0  \cf0\par
+function \b YearsBetween\b0 (const ANow: TDateTime, const AThen: TDateTime): Integer; \par
+\cf3\b Description\cf0\b0  \par
+Call YearsBetween to obtain the difference, in years, between two TDateTime values. Because years are not all the same length (e.g. leap years), YearsBetween returns an approximation based on an assumption of 365.25 days per year. Fractional years are not counted. Thus, for example, YearsBetween reports the difference between Jan 1 and Dec 31 as 0 on non-leap years and 1 on leap years. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b YearSpan\cf0\b0  Routine Returns the approximate number of years (including fractions thereof) between two specified TDateTime values.\par
+\cf3\b Syntax\b0  \cf0\par
+function \b YearSpan\b0 (const ANow: TDateTime, const AThen: TDateTime): Double; \par
+\cf3\b Description\b0  \par
+\cf0 Call YearSpan to obtain the difference, in years, between two TDateTime values. Because years are not all the same length (e.g. leap years), YearsBetween returns an approximation based on an assumption of 365.25 days per year. Unlike the YearsBetween function, which does not report fractional years, YearSpan reports incomplete years as a fraction of a 365.25-day year. \line\pard\cf1\lang1049 =====================================================\par
+\cf0\par
+\pard\sb100\sa100\cf2\lang1033\b Yesterday\cf0\b0  Routine Returns a TDateTime value that represents the preceding day.\par
+\cf3\b Syntax\cf0\b0  \par
+function \b Yesterday\b0 : TDateTime; \par
+\cf3\b Description\cf0\b0  \par
+Yesterday returns a TDateTime value with the date portion set to the day before the current date and the time portion set to 0. \line\f2\fs24\par
+}
+ 
