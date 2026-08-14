@@ -30,5 +30,6 @@ DAYSPAN(1.31.2008, today),
 CONJUGATE(complex(-pi,-e)),
 real2curr(f(pi,e,d)),
 max(1,2,3,4,5,6,7,8,9),
-Fact(10)
+Fact(16),
+not(and(True,false,or(false,true,false)))
 }
